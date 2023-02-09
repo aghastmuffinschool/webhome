@@ -25,15 +25,13 @@ function loadXMLDoc() {
   };
   xhttp.open("GET", "crush.txt", true);
   xhttp.send();
-
-  let b = a.split("|")
-
+  let b = a.split("|");
   let i = 0;
   while(c !== search){
     i++;
     c = b[i];
-  }
-  c = b[i + 1]
+  };
+  c = b[i + 1];
   document.getElementById("reply").innerHTML = "we found (number of people with known crushes on you (as of last update)): ", c;
 }
 
